@@ -3,7 +3,8 @@ import Link from 'next/link'
 import styles from '@/styles/EventItem.module.css'
 
 
-export default function EventItem({evt}) {
+export default function EventItem({ evt }) {
+  
   return (
     <div className={styles.event}>
       <div className={styles.img}>
@@ -15,7 +16,7 @@ export default function EventItem({evt}) {
       </div>
 
       <div className={styles.info}>
-        <span>{new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}</span>
+        <span>{new Date(evt.date).toLocaleString('en-UK', {day: 'numeric', month: 'short', year: 'numeric'})} at {evt.time}</span>
         <h3>{evt.name}</h3>
       </div>
 
