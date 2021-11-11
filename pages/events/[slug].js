@@ -26,7 +26,6 @@ export default function EventPage({evt}) {
         router.push('/events')
       }
     }
-  
   }
 
   return (
@@ -68,8 +67,6 @@ export default function EventPage({evt}) {
           </a>
         </Link>
       </div>
-
-
     </Layout>
   )
 }
