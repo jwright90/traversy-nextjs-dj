@@ -6,7 +6,7 @@ export default function DashboardEvent({evt, handleDelete}) {
   return (
     <div className={styles.event}>
       <h4>
-        <Link href={`/event/${evt.slug}`}>
+        <Link href={`/events/${evt.slug}`}>
           <a>{evt.name}</a>
         </Link>
       </h4>
